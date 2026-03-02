@@ -20,7 +20,7 @@ jobs:
 
         run: |
 
-          docker build -t ompraksh13890/devops:${{ github.run_number }} .
+          docker build -t omprakash13890/devops:${{ github.run_number }} .
 
           docker push omprakash13890/devops:${{ github.run_number }}
 
