@@ -30,9 +30,9 @@ jobs:
         working-directory: infra
         run: terraform validate
  
-      # - name: Terraform Plan
-       # working-directory: infra
-       # run: terraform plan -var="image_tag=${{ github.run_number }}"
+      - name: Terraform Plan
+       working-directory: infra
+       run: terraform plan -var="image_tag=${{ github.run_number }}"
  
       - name: Terraform Apply
         working-directory: infra
